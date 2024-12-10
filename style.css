@@ -1,4 +1,112 @@
-h1{
+/* Global Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #e3f2fd; /* Light blue pastel background for a fresh sky feel */
+        color: #333; /* Dark text for readability */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .weather-app {
+        background-color: #ffffff; /* White background for the weather box */
+        border-radius: 15px;
+        width: 400px; /* Increased width for more space */
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      }
+      
+      header {
         text-align: center;
-        
-}
+      }
+      
+      h1 {
+        font-size: 2.2rem; /* Slightly larger size for emphasis */
+        margin-bottom: 20px;
+        color: #2c3e50; /* Dark blue for a more professional and appealing look */
+        font-weight: bold;
+      }
+      
+      .search-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      
+      #city-input {
+        width: 70%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+      }
+      
+      #search-btn {
+        width: 25%;
+        background-color: #00b894; /* Modern, fresh green background */
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      #search-btn:hover {
+        background-color: #00a282; /* Slightly darker green on hover */
+      }
+      
+      .weather-info {
+        background-color: #f0f8ff; /* Light blue for the weather info box to give a soft sky look */
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow to give depth */
+      }
+      
+      .weather-info h2 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        color: #2c3e50; /* Dark blue for city name */
+      }
+      
+      .weather-info p {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #34495e; /* Dark blue-gray for the text to give contrast */
+      }
+      
+      .weather-info .temperature {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #ff6f61; /* Coral red color for the temperature to make it pop */
+      }
+      
+      .weather-info .conditions {
+        font-style: italic;
+        color: #7f8c8d; /* Light gray for weather condition text */
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 400px) {
+        .weather-app {
+          width: 90%;
+          padding: 20px;
+        }
+      
+        #city-input {
+          width: 65%;
+        }
+      
+        #search-btn {
+          width: 30%;
+        }
+      }
+      
