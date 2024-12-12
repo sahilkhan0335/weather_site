@@ -1,6 +1,7 @@
 # Weather App 🌤️
 
 A simple static weather app built using HTML, CSS, and JavaScript. The app provides a basic interface to display weather information with placeholder data for practice.
+Add New Features Soon......
 
 ---
 
